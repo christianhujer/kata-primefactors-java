@@ -47,6 +47,7 @@ dependencies {
     testImplementation "io.cucumber:cucumber-junit:$rootProject.ext.cucumberVersion"
     testImplementation "io.cucumber:cucumber-junit-platform-engine:$rootProject.ext.cucumberVersion"
     testImplementation "junit:junit:$rootProject.ext.junitVersion"
+    testImplementation "org.hamcrest:hamcrest:2.2"
     testImplementation "org.junit.jupiter:junit-jupiter:$rootProject.ext.junitJupiterVersion"
     testImplementation "org.junit.jupiter:junit-jupiter-api:$rootProject.ext.junitJupiterVersion"
     testImplementation "org.junit.jupiter:junit-jupiter-engine:$rootProject.ext.junitJupiterVersion"
@@ -86,7 +87,7 @@ jacocoTestReport {
 }
 
 pitest {
-    targetClasses = ['com.nelkinda.template.*'] // TODO change
+    targetClasses = ['com.christianhujer.kata.*'] // TODO change
     pitestVersion = '1.5.1'
     timestampedReports = false
     testPlugin = 'junit5'
